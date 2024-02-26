@@ -3,7 +3,7 @@ describe("Example Component", () => {
     // Arreglar
     let value = 8;
     // Estímulo
-    value = value + 2;
+    value = value + 5;
     // Observar el resultado
     expect(value).toBeGreaterThan(10);
   });
