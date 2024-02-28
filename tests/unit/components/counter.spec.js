@@ -46,4 +46,15 @@ describe('Counter Component', () => {
     const value = wrapper.find('[data-testid="counter"]').text();
     expect(Number(value)).toBe(start);
   });
+
+  test('Debe mostrar la prop del title', () => {
+    const title = 'Hola Mundo';
+    const wrapper = shallowMount(Counter, {
+      props: {
+        title,
+      },
+    });
+
+    expect(wrapper.find('h2').text()).toBe(title);
+  });
 });
